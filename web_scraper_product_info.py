@@ -2,8 +2,8 @@ import bs4
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
-#works on-'https://www.newegg.com/Video-Cards-Video-Devices/Category/ID-38?Tpk=graphics%20card'
-my_url = ''
+#works for newegg.com website
+my_url = 'https://www.newegg.com/Video-Cards-Video-Devices/Category/ID-38?Tpk=graphics%20card'
 
 uClient = uReq(my_url)  #requests all the data from my_url
 page_html = uClient.read()  #pastes all the raw html in a variable
